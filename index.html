@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./new.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script>
+
+      function myFunction() {
+  let x = document.getElementById("nav-bar");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="container" id="header-container">
+        <img src="./images/My Cake Shop.svg" alt="logo" id="header-img" />
+
+        <nav id="nav-bar">
+          <li><a href="#our-cakes" class="nav-link">Our Cakes</a></li>
+          <li><a href="#process-reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Our Contact</a></li>
+        </nav>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <section id="hero">
+      <div id="hero-container" class="container">
+        <div id="brandline-container">
+          <h6>Tasty and beautiful cakes</h6>
+          <h1>
+            We make your celebrations
+            <u>tasty!!!</u>
+          </h1>
+          <a href="#our-cakes">
+            <div id="our-cake-button">
+              <p>Our Cakes</p>
+            </div>
+          </a>
+        </div>
+        <div id="form-container">
+          <div id="card">
+            <div id="card-container">
+              <p>
+                Follow our newsletter to see our newly design cakes also for additonal discount on your next order just
+                for you!!
+              </p>
+              <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" type="email" id="email" placeholder="Enter email here" />
+                <input type="submit" id="submit" value="Get Started" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="our-cakes">
+      <div id="our-cakes-container" class="container">
+        <h2>Our Cakes</h2>
+        <div id="grid">
+          <div class="grid-item" id="cake0">
+            <div class="cake-thumbail">
+              <img src="./images/cake 1.png" alt="cake1" />
+            </div>
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="grid-item" id="cake1">
+            <div class="cake-thumbail">
+              <img src="./images/cake 2.png" alt="cake1" />
+            </div>
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="grid-item" id="cake2">
+            <div class="cake-thumbail">
+              <img src="./images/cake 3.png" alt="cake1" />
+            </div>
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="grid-item" id="cake3">
+            <div class="cake-thumbail">
+              <img src="./images/cake 1.png" alt="cake1" />
+            </div>
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="grid-item" id="cake4">
+            <div class="cake-thumbail">
+              <img src="./images/cake 2.png" alt="cake1" />
+            </div>
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="grid-item" id="cake5">
+            <div class="cake-thumbail">
+              <img src="./images/cake 3.png" alt="cake1" />
+            </div>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="process-reviews" class="section">
+      <div id="process-container">
+        <h2>Our Process & Reviews</h2>
+        <div id="video-review" class="container">
+          <div id="video-container">
+            <iframe
+              id="video"
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/wa5YiswoAUU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div id="reviews">
+            <div class="review">
+              <p>
+                “Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit”
+                <br />
+                <strong>-Lorem Ipsum,Our customer</strong>
+              </p>
+            </div>
+            <div class="review">
+              <p>
+                “Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit”
+                <br />
+                <strong>-Lorem Ipsum,Some Famous Chef</strong>
+              </p>
+            </div>
+            <div class="review">
+              <p>
+                “Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit”
+                <br />
+                <strong>-Lorem Ipsum,Someone you dont know</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div id="contact-container" class="container">
+          <h2>Contact Us</h2>
+          <div id="map-details">
+              <div id="map-container">
+                  <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849.1374731563179!2d74.88877153754015!3d31.646172160270638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39196344813eaeeb%3A0x1a8a3c55e2671554!2sMy%20Cake%20Shop!5e0!3m2!1sen!2sin!4v1627112824507!5m2!1sen!2sin" width="100%"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>    
+              </div>
+              <div id ="details">
+                  <div class="detail-item"><p><strong>Phone: </strong>+xx 0000000000</div>
+                  <div class="detail-item"><p><strong>Landline: </strong>+xx 0000000000</p></div>
+                  <div class="detail-item"><p><strong>email: </strong>owner@websitename.com</p></div>
+                  <div class="detail-item"><p><strong>Address: </strong>
+                    <ul><li>Street 0, Area 51,<br>City 0,State 0</li>
+                  <li>Street 1, Area 1,<br>City 1,State 1</li></ul></p></div>
+                  
+              </div>
+          </div>
+          
+      </div>
+      
+    </section>
+  <footer id="footer">
+      <p>This website is designed and developed by me for a freecodecamp project.</p>
+  </footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  </body>
+</html>
